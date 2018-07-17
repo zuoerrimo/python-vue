@@ -1,8 +1,14 @@
 # python-vue
 
-> A Vue.js project
+> python + mysql + vue
 
 ## Build Setup
+
+# init db
+python db.py
+
+# run
+npm run start
 
 ``` bash
 # install dependencies

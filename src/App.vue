@@ -14,13 +14,11 @@
         width="180">
       </el-table-column>
     </el-table>
-    {{msg}}
   </div>
 </template>
 
 <script>
   import axios from 'axios'
-  import _ from 'lodash'
   export default {
     name: 'App',
     data() {
@@ -40,13 +38,6 @@
               name: user[1]
             }
           })
-        })
-      },
-      getMsg() {
-        axios
-        .get('http://127.0.0.1:5000/getMsg')
-        .then((res) => {
-          this.msg = res.data.msg
         })
       },
     },
