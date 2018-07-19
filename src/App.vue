@@ -2,16 +2,18 @@
   <div id="app">
     <el-table
       :data="users"
+      border
+      stripe
       style="width: 100%">
       <el-table-column
         prop="id"
         label="编号"
-        width="180">
+        >
       </el-table-column>
       <el-table-column
         prop="name"
         label="姓名"
-        width="180">
+        >
       </el-table-column>
     </el-table>
   </div>
@@ -24,7 +26,6 @@
     data() {
       return {
         users: [],
-        msg: '',
       }
     },
     methods: {
@@ -42,19 +43,10 @@
       },
     },
     mounted() {
-      this.getMsg()
       this.getUsers()
     }
   }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
